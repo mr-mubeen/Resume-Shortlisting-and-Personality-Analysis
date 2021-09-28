@@ -1,21 +1,11 @@
 
 
-# %%
-# Import the library
 from sys import path
 import docx2txt
 import app , os
 
 
-# %%
-# Load files
-# from google.colab import files
-# uploaded = files.upload()
-
-# %%
-# Store and print the resume
-# img = os.listdir('./CV')[0]
-# img = './CV/'+img
+# Path for Document
 path1 = app.path
 resume = docx2txt.process(path1)
 print(resume)
