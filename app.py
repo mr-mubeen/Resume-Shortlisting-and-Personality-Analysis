@@ -42,14 +42,6 @@ def hello_world1():
     answers =  text1 + text2 + text3 + text4 + text5
 
     import PP
-    
-    print (text1)
-    print (text2)
-    print (text3)
-    print (text4)
-    print (text5)
-    print(answers)
-    print(path)
 
     results = PP.results
     per = PP.matchPercentage
@@ -57,8 +49,6 @@ def hello_world1():
     print(str(per))
     print(results)
 
-    # results = "a"
-    # per = "2"
 
     
     return render_template("results.html" , res = results , p = per)
